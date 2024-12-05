@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Tech Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>   
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-mobile-alt"></i>
+            Mobile Tech Review
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Mobile Tech Review</h1>
+        <h2>by Sahil Kumar, Anmol, and Yuvraj</h2>
+        <p>Your trusted source for genuine mobile phone reviews</p>
+    </header>
+
+    <div class="hero">
+        <div class="floating-phones">
+            <div class="phone-animation"></div>
+            <div class="phone-animation"></div>
+            <div class="phone-animation"></div>
+            <div class="phone-animation"></div>
+            <div class="phone-animation"></div>
+            <div class="phone-animation"></div>
+        </div>
+        <!-- Your existing hero content -->
+    </div>
+    
+
+    <div class="featured-phones">
+        <div class="phone-card">
+            <img src="phone1.jpg" alt="Latest Phone">
+            <h3>Latest Release</h3>
+            <p>Experience the future with our latest reviewed phone.</p>
+            <button onclick="window.location.href='specification.html'">See Specifications</button>
+        </div>
+    </div>
+
+    <section class="quick-reviews">
+        <h2>Latest Reviews</h2>
+        <div class="review-grid">
+            <!-- Phone Review Cards -->
+            <div class="review-card">
+                <img src="phone2.jpg" alt="Phone 2">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>Revolutionary camera system with exceptional performance.</p>
+                <button onclick="showSpecs('iphone15')">View Details</button>
+            </div>
+            <div class="review-card">
+                <img src="phone3.jpg" alt="Phone 3">
+                <h3>Samsung S23 Ultra</h3>
+                <p>Ultimate power meets versatility.</p>
+                <button onclick="showSpecs('s23ultra')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add after your existing content -->
+<div class="animated-bg">
+    <div class="animated-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+<section class="latest-phones">
+    <h2>Latest Releases</h2>
+    <div class="phone-grid">
+        <!-- iPhone 15 Series -->
+        <div class="phone-card premium">
+            <span class="badge">New</span>
+            <img src="iphone15promax.jpg" alt="iPhone 15 Pro Max">
+            <h3>iPhone 15 Pro Max</h3>
+            <div class="specs">
+                <span>A17 Pro Chip</span>
+                <span>48MP Camera</span>
+                <span>6.7" Display</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <!-- Samsung S24 Series -->
+        <div class="phone-card premium">
+            <span class="badge">Coming Soon</span>
+            <img src="s24ultra.jpg" alt="Samsung S24 Ultra">
+            <h3>Samsung S24 Ultra</h3>
+            <div class="specs">
+                <span>Snapdragon 8 Gen 3</span>
+                <span>200MP Camera</span>
+                <span>6.8" Display</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <!-- OnePlus 12 -->
+        <div class="phone-card premium">
+            <span class="badge">Featured</span>
+            <img src="oneplus12.jpg" alt="OnePlus 12">
+            <h3>OnePlus 12</h3>
+            <div class="specs">
+                <span>Snapdragon 8 Gen 3</span>
+                <span>50MP Camera</span>
+                <span>6.7" AMOLED</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="phone-grid">
+        <!-- Mid-Range Section -->
+        <div class="phone-card">
+            <img src="pixel7a.jpg" alt="Google Pixel 7a">
+            <h3>Google Pixel 7a</h3>
+            <div class="specs">
+                <span>Tensor G2</span>
+                <span>64MP Camera</span>
+                <span>6.1" Display</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="phone-card">
+            <img src="nothing2.jpg" alt="Nothing Phone 2">
+            <h3>Nothing Phone 2</h3>
+            <div class="specs">
+                <span>Snapdragon 8+ Gen 1</span>
+                <span>50MP Camera</span>
+                <span>Glyph Interface</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="phone-card">
+            <img src="xiaomi13t.jpg" alt="Xiaomi 13T">
+            <h3>Xiaomi 13T</h3>
+            <div class="specs">
+                <span>Dimensity 8200</span>
+                <span>50MP Leica</span>
+                <span>6.67" AMOLED</span>
+            </div>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+</section>
+
+
+    <section class="feedback-section">
+        <h2>Share Your Thoughts</h2>
+        <form id="feedbackForm" class="feedback-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <div class="rating">
+                <input type="radio" name="rating" value="5" id="5"><label for="5">★</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">★</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">★</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">★</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">★</label>
+            </div>
+            <textarea placeholder="Your Comments" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; 2024 Mobile Tech Review. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Loading animation -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>
